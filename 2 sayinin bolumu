@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    internal class Program
+    {
+        /*
+         Klavyeden girilen 2 sayının bölümünü bulan
+         */
+        static void Main(string[] args)
+        {
+            double sayi1, sayi2, bolum;
+
+            Console.Write("birinci sayıyı giriniz= ");
+            sayi1= Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("ikinci sayıyı giriniz= ");
+            sayi2 = Convert.ToInt16(Console.ReadLine());
+
+            bolum = sayi1 / sayi2;
+            Console.WriteLine("bölüm= " + bolum);
+            Console.Read();
+        }
+    }
+}
